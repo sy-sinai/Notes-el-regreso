@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:Notes.Models"
+             x:Class="Notes.Views.AboutPage"
+             Title="Sammy´s Notes">
+    <ContentPage.BindingContext>
+        <models:About />
+    </ContentPage.BindingContext>
+    <VerticalStackLayout Spacing="10" Margin="10">
+        <HorizontalStackLayout Spacing="10">
+            <Image Source="mariposa.png"
+                   SemanticProperties.Description="The dot net bot waving hello!"
+                   HeightRequest="64" />
+            <Label FontSize="50" FontAttributes="None" Text="Sammy Porras" VerticalOptions="End" />
+           
+        </HorizontalStackLayout>
+        <Label FontSize="20" Text="Mi nombre es Sammy, como dice en casi todo el trabajo. Tengo 22 años y estudio Ingeniería de Software en la UDLA" VerticalOptions="End" />
+        
+    </VerticalStackLayout>
+
+</ContentPage>
